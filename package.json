@@ -1,0 +1,22 @@
+{
+  "name": "chatsocket",
+  "version": "1.0.0",
+  "description": "chat com socket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvitorn/Chat-Socket.git"
+  },
+  "author": "jvitorn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jvitorn/Chat-Socket/issues"
+  },
+  "homepage": "https://github.com/jvitorn/Chat-Socket#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
