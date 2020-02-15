@@ -1,3 +1,5 @@
+//definindo a porta do servidor
+const port = 3000;
 //criando express
 const express = require('express');
 const path = require('path');
@@ -18,4 +20,12 @@ app.set('view engine','html');
 //quando entrar na rota padrao sera iniciado o 'index.html'
 app.use('/',(req,res)=>{
     res.render('index.html');
+});
+//iniciando conexao com um socket
+io.on('connection', socket =>{
+console.log('Socket Conectado: ${socket.id}');
+});
+//server
+app.listen(port,function(){
+  console.log('Server is running at http://localhost:'+ port);
 });

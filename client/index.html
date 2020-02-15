@@ -15,7 +15,23 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-        <h6>Ola mundo</h6>
+            <div class="col-md-9 offset-1 p-5 mt-5 ">
+            <form action="" id="chat">
+                <!-- nome do usuario -->
+                <div class="input-group mb-3">
+                    <input type="text" name ="username" class="form-control" placeholder="username">    
+                </div>
+                <!-- visualizar -->
+                <div class="mensagem border border-danger mb-3 p-5 rounded">
+                    testando mensagens por aqui
+                </div>
+                <!-- mensagem do usuario -->
+                <div class="input-group mb-3">
+                    <input type="text" name ="message" class="form-control" placeholder="Mensagem">
+                    <input type="button" value="Enviar" class="btn  btn-outline-dark">  
+                </div>
+            </form>
+            </div>
         </div>
     </div>
 </body>
