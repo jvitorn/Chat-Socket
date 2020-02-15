@@ -19,6 +19,7 @@ app.engine('html',require('ejs').renderFile);
 app.set('view engine','html');
 //quando entrar na rota padrao sera iniciado o 'index.html'
 app.use('/',(req,res)=>{
+    res.render(submit);
     res.render('index.html');
 });
 //iniciando conexao com um socket
