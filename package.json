@@ -4,6 +4,7 @@
   "description": "chat com socket",
   "main": "index.js",
   "scripts": {
+    "start":"nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,9 +18,9 @@
   },
   "homepage": "https://github.com/jvitorn/Chat-Socket#readme",
   "dependencies": {
-    "ejs": "^3.0.1",
+    "ejs": "^3.1.3",
     "express": "^4.17.1",
-    "nodemon": "^2.0.2",
+    "nodemon": "^2.0.4",
     "socket.io": "^2.3.0"
   }
 }

@@ -35,4 +35,23 @@
         </div>
     </div>
 </body>
+<script>
+  const socket = io();
+
+  console.log(socket);
+  io.connect(url, { transports: ['websocket'] });
+    socket.on('connect', () => {
+        console.log(socket.connected); // true
+    });
+    socket.on('error', function()
+    {
+        console.log("Sorry, there seems to be an issue with the connection!");
+    });
+    socket.on('connect_error', function(err)
+    {
+        console.log("connect failed"+err);
+    });
+
+    socket.emit('hello', 'world');
+</script>
 </html>
